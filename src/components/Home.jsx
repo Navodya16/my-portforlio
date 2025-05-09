@@ -12,7 +12,7 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center px-4 md:flex-row">
         <div className="flex flex-col justify-center ">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I am a full stack developer
+            I am a Software Engineer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
             i have 4 years of experience building and designing software
@@ -20,7 +20,12 @@ const Home = () => {
             like react, php.
           </p>
           <div>
-            <Link to="Portfolio" smooth duration={500} className="group text-white w-fit px-6 py-3 my-2 sm:my-1 mb-2 sm:mb-0 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500">
+            <Link
+              to="Portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 sm:my-1 mb-2 sm:mb-0 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500"
+            >
               Portforlio
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
