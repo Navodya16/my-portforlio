@@ -1,45 +1,36 @@
 import React from "react";
-import cpp from "../assets/experience/cpp.png";
-import java from "../assets/experience/java.png";
-import python from "../assets/experience/python.jpg";
-import javascript from "../assets/experience/javascript.png";
-import reacts from "../assets/experience/react.jpg";
-import spring from "../assets/experience/spring.png";
 
 const Experience = () => {
-  const experiences = [
-    { id: 1, src: cpp, title: "C++", style: "shadow-blue-500" },
-    { id: 2, src: java, title: "Java", style: "shadow-orange-500" },
-    { id: 3, src: python, title: "Python", style: "shadow-blue-500" },
-    { id: 4, src: javascript, title: "JavaScript", style: "shadow-yellow-500" },
-    { id: 5, src: reacts, title: "React", style: "shadow-blue-500" },
-    { id: 6, src: spring, title: "Spring", style: "shadow-orange-500" },
-  ];
-
   return (
     <div
       name="Experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white "
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-        <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Experience
           </p>
-          <p className="py-6">These are the technlogies I have worked with</p>
         </div>
+        <p className="text-xl mt-10">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
+          consequuntur labore nemo ullam eos soluta qui, architecto placeat
+          dolore exercitationem odio maxime harum eaque ipsa, unde molestias
+          sunt tempore ab culpa quia explicabo ad in eveniet! Quisquam quaerat
+          iste veniam reprehenderit laborum quibusdam hic, eligendi deleniti
+          aliquam distinctio itaque rem!
+        </p>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
-          {experiences.map(({ id, src, title, style }) => (
-            <div
-              key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
-            >
-              <img src={src} alt="" className="w-20 mx-auto" />
-              <p className="mt-4">{title}</p>
-            </div>
-          ))}
-        </div>
+        <br />
+
+        <p className="text-xl">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          dolorum quis voluptatum sed qui obcaecati nulla pariatur labore
+          tempora deserunt, repellendus ipsam in voluptatibus? Sunt aliquid sit
+          magni? Quas quo debitis quam architecto culpa expedita repellendus
+          quod! Adipisci dolorem totam magnam deleniti, consequatur quae
+          exercitationem, eaque quisquam doloremque earum vero!
+        </p>
       </div>
     </div>
   );

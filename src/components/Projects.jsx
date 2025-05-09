@@ -1,13 +1,13 @@
 import React from "react";
-import arrayDestruct from "../assets/portforlio/arrayDestruct.png";
-import installNode from "../assets/portforlio/installNode.png";
-import navbar from "../assets/portforlio/navbar.png";
-import reactParallax from "../assets/portforlio/reactParallax.jpg";
-import reactSmooth from "../assets/portforlio/reactSmooth.jpg";
-import reactWeather from "../assets/portforlio/reactWeather.png";
+import arrayDestruct from "../assets/projects/arrayDestruct.png";
+import installNode from "../assets/projects/installNode.png";
+import navbar from "../assets/projects/navbar.png";
+import reactParallax from "../assets/projects/reactParallax.jpg";
+import reactSmooth from "../assets/projects/reactSmooth.jpg";
+import reactWeather from "../assets/projects/reactWeather.png";
 
-const Portfolio = () => {
-  const portforlios = [
+const Projects = () => {
+  const projects = [
     { id: 1, src: arrayDestruct },
     { id: 2, src: reactParallax },
     { id: 3, src: navbar },
@@ -18,20 +18,20 @@ const Portfolio = () => {
 
   return (
     <div
-      name="Portfolio"
+      name="Projects"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Portfolio
+            Projects
           </p>
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
         {/* Grid container STARTS here */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portforlios.map(({ id, src }) => (
+          {projects.map(({ id, src }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -55,4 +55,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;
