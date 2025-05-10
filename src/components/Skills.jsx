@@ -5,6 +5,10 @@ import python from "../assets/skills/python.jpg";
 import javascript from "../assets/skills/javascript.png";
 import reacts from "../assets/skills/react.jpg";
 import spring from "../assets/skills/spring.png";
+import mysql from "../assets/skills/mysql.png";
+import mongodb from "../assets/skills/mongodb.png";
+import postgresql from "../assets/skills/postgresql.png";
+import git from "../assets/skills/git.png";
 
 const Skills = () => {
   const skills = [
@@ -14,12 +18,16 @@ const Skills = () => {
     { id: 4, src: javascript, title: "JavaScript", style: "shadow-yellow-500" },
     { id: 5, src: reacts, title: "React", style: "shadow-blue-500" },
     { id: 6, src: spring, title: "Spring", style: "shadow-orange-500" },
+    { id: 7, src: mysql, title: "MySQL", style: "shadow-orange-500" },
+    { id: 8, src: mongodb, title: "MongoDB", style: "shadow-green-500" },
+    { id: 9, src: postgresql, title: "PostgreSQL", style: "shadow-blue-500" },
+    { id: 10, src: git, title: "Git", style: "shadow-white-500" },
   ];
 
   return (
     <div
       name="Skills"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="bg-gradient-to-b from-gray-800 to-black w-full min-h-screen"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
